@@ -30,7 +30,7 @@ html(lang="en")
             console.log($('#name').val())
             $.ajax({
                 type: 'POST',
-                url: '/login',
+                url: '/js/login',
                 data: {
                     name: $('#name').val(),
                     password: $('#password').val()
@@ -41,7 +41,7 @@ html(lang="en")
                 success: function (res) {
                     if (res.err == 0) {
                         alert('success\n\n name: ' + $('#name').val() + '\n password: ' + $('#password').val())
-                        window.location.href = './servers'
+                        window.location.href = './js/servers'
                     } else {
                         alert('Error')
                     }
