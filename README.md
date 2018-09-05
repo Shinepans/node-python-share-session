@@ -3,3 +3,12 @@
 Flask、Express
 
 Redis、Mongod
+
+
+##
+
+node: node ./jsServer/app.js
+
+flask: flask run
+
+env:  redis,mongodb
