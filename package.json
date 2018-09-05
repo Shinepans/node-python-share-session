@@ -1,0 +1,40 @@
+{
+  "name": "node-python-share-session",
+  "version": "1.0.0",
+  "description": "shine",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "compress": "^0.99.0",
+    "compression": "^1.7.3",
+    "connect-redis": "^3.3.3",
+    "errorhandler": "^1.5.0",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.0",
+    "jade": "^1.11.0",
+    "mongoose": "^5.2.13",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "redis": "^2.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "js": "nodemon ./jsServer/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shinepans/node-python-share-session.git"
+  },
+  "author": "shine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shinepans/node-python-share-session/issues"
+  },
+  "homepage": "https://github.com/Shinepans/node-python-share-session#readme",
+  "keywords": [
+    "shine"
+  ]
+}

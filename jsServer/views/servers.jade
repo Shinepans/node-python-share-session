@@ -1,0 +1,57 @@
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="description", content="Test")
+        meta(name="viewport", content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+        title Test Page
+    style.
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+        }
+
+    body(style="margin:0px !important")
+        h3 JS Servers
+        button(style="margin-top: 1rem;", onclick="info()") My info
+        button(style='margin-top: 0.3rem;', onclick="mycookie()") My Cookie
+        h3 Py Servers
+        button(style="margin-top: 1rem;", onclick="pyinfo()") My info
+
+    script(type="text/javascript", src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js")
+    script.
+        function info() {
+            $.ajax({
+                type: 'GET',
+                url: '/info',
+                error: function () {
+                    alert('network error')
+                },
+                success: function (res) {
+                    if (res.err == 0) {
+                        alert('info: \nname: ' + res.name)
+                    }
+                    console.log(res)
+                }
+            })
+        }
+        function mycookie() {
+            $.ajax({
+                type: 'GET',
+                url: '/cookie',
+                error: function () {
+                    alert('network error')
+                },
+                success: function (res) {
+                    if (res.err == 0) {
+                        alert('cookie: ' + res.cookie)
+                    }
+                }
+            })
+        }
+        function pyinfo() {
+            window.location.href = 'localhost:3001/info'
+        }
