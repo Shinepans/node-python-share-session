@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f78bd27d-9d66-46e3-a75e-0aa60db278fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pyServer/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jsServer/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsServer/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsServer/views/login.jade" beforeDir="false" afterPath="$PROJECT_DIR$/jsServer/views/login.jade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsServer/views/reg.jade" beforeDir="false" afterPath="$PROJECT_DIR$/jsServer/views/reg.jade" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsServer/views/servers.jade" beforeDir="false" afterPath="$PROJECT_DIR$/jsServer/views/servers.jade" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyServer/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyServer/app.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -50,19 +47,19 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="39" />
-          <entry key="jade" value="1230" />
-          <entry key="js" value="2025" />
+          <entry key="jade" value="1323" />
+          <entry key="js" value="2054" />
           <entry key="json" value="62" />
           <entry key="md" value="97" />
-          <entry key="py" value="721" />
+          <entry key="py" value="881" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="62" />
-          <entry key="Jade" value="1230" />
-          <entry key="JavaScript" value="2025" />
-          <entry key="PLAIN_TEXT" value="857" />
+          <entry key="Jade" value="1323" />
+          <entry key="JavaScript" value="2054" />
+          <entry key="PLAIN_TEXT" value="1017" />
         </counts>
       </usages-collector>
     </session>
@@ -81,17 +78,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jsServer/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="69" column="17" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
+            <state relative-caret-position="512">
+              <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jsServer/views/servers.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="634">
-              <caret line="49" column="53" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="53" />
+            <state relative-caret-position="760">
+              <caret line="55" column="44" selection-start-line="55" selection-start-column="44" selection-end-line="55" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -99,17 +96,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jsServer/views/login.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
+            <state relative-caret-position="277">
               <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pyServer/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+            <state relative-caret-position="315">
+              <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -140,8 +137,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jsServer/views/reg.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="631">
-              <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+            <state relative-caret-position="378">
+              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -172,8 +169,11 @@
       <find>cookie</find>
       <find>reg</find>
       <find>redisCookieCode</find>
-      <find>redisHashVal</find>
       <find>HTTP_COOKIE</find>
+      <find>redisHashVal</find>
+      <find>redisInfoJson</find>
+      <find>pyinfo</find>
+      <find>redirect</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -187,12 +187,12 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/jsServer/reg.jade" />
         <option value="$PROJECT_DIR$/jsServer/passport.js" />
-        <option value="$PROJECT_DIR$/jsServer/views/servers.jade" />
         <option value="$PROJECT_DIR$/jsServer/views/reg.jade" />
         <option value="$PROJECT_DIR$/jsServer/views/login.jade" />
-        <option value="$PROJECT_DIR$/jsServer/app.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/pyServer/app.py" />
+        <option value="$PROJECT_DIR$/jsServer/app.js" />
+        <option value="$PROJECT_DIR$/jsServer/views/servers.jade" />
       </list>
     </option>
   </component>
@@ -262,6 +262,11 @@
             <path>
               <item name="node-python-share-session" type="b2602c69:ProjectViewProjectNode" />
               <item name="node-python-share-session" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="node-python-share-session" type="b2602c69:ProjectViewProjectNode" />
+              <item name="node-python-share-session" type="462c0819:PsiDirectoryNode" />
               <item name="pyServer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -305,12 +310,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1536114006370</updated>
-      <workItem from="1536114008720" duration="15878000" />
+      <workItem from="1536114008720" duration="17203000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15878000" />
+    <option name="totallyTimeSpent" value="17203000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1096" extended-state="6" />
@@ -370,30 +375,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jsServer/views/servers.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="49" column="53" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsServer/views/reg.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsServer/views/index.jade">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsServer/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="69" column="17" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jsServer/passport.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
@@ -408,13 +389,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jsServer/views/login.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -422,10 +396,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jsServer/views/login.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pyServer/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+        <state relative-caret-position="315">
+          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsServer/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsServer/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsServer/views/reg.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsServer/views/servers.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="55" column="44" selection-start-line="55" selection-start-column="44" selection-end-line="55" selection-end-column="44" />
         </state>
       </provider>
     </entry>

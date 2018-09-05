@@ -67,34 +67,34 @@ app.get('/', (req, res) => {
         res.render('reg')
     }
 })
-app.get('/servers', (req, res) => {
+app.get('/js/servers', (req, res) => {
     if (!req.user) {
         res.render('login')
     } else {
         res.render('servers')
     }
 })
-app.get('/info', (req, res) => {
+app.get('/js/info', (req, res) => {
     return res.json({err: 0, name: req.user.name})
 })
-app.get('/cookie', (req, res) => {
+app.get('/js/cookie', (req, res) => {
     console.log(req)
     return res.json({err: 0, cookie: req.headers.cookie})
 })
-app.get('/signin', (req, res) => {
+app.get('/js/signin', (req, res) => {
     if (req.user) {
-        return res.redirect('/servers')
+        return res.redirect('/js/servers')
     }
-    res.render('login')
+    return res.render('login')
 })
-app.post('/reg', async (req, res) => {
+app.post('/js/reg', async (req, res) => {
     console.log('new reg: ' + req.body)
     const name = req.body.name
     const password = req.body.password
     await new User({name, password}).save()
     return res.json({err: 0})
 })
-app.post('/login', (req, res, next) => {
+app.post('/js/login', (req, res, next) => {
     passport.authenticate('local', (err, user, info) => {
         console.log(info)
         if (err) {
