@@ -68,7 +68,11 @@ app.get('/', (req, res) => {
     }
 })
 app.get('/servers', (req, res) => {
-    res.render('servers')
+    if (!req.user) {
+        res.render('login')
+    } else {
+        res.render('servers')
+    }
 })
 app.get('/info', (req, res) => {
     return res.json({err: 0, name: req.user.name})
@@ -77,7 +81,7 @@ app.get('/cookie', (req, res) => {
     console.log(req)
     return res.json({err: 0, cookie: req.headers.cookie})
 })
-app.get('/login', (req, res) => {
+app.get('/signin', (req, res) => {
     if (req.user) {
         return res.redirect('/servers')
     }
@@ -104,7 +108,7 @@ app.post('/login', (req, res, next) => {
             if (err) {
                 return next(err)
             } else {
-                res.redirect('/')
+                return res.json({err: 0})
             }
         })
     })(req, res, next)

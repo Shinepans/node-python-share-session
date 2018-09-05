@@ -19,12 +19,12 @@ html(lang="en")
         input#name(placeholder='name')
         input#password(placeholder='password')
         button(style="margin-top: 1rem;", onclick="submit()") Sign In
-        button(style="margin-top: 1rem;", onclick="reg()") To Login
+        button(style="margin-top: 1rem;", onclick="reg()") To SignUp
 
     script(type="text/javascript", src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js")
     script.
         function reg() {
-            window.location.href = '/reg'
+            window.location.href = '/'
         }
         function submit() {
             console.log($('#name').val())
@@ -40,8 +40,10 @@ html(lang="en")
                 },
                 success: function (res) {
                     if (res.err == 0) {
-                        alert('reg success\n\n name: ' + $('#name').val() + '\n password: ' + $('#password').val())
+                        alert('success\n\n name: ' + $('#name').val() + '\n password: ' + $('#password').val())
                         window.location.href = './servers'
+                    } else {
+                        alert('Error')
                     }
                 }
             })
